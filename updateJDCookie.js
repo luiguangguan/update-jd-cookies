@@ -267,13 +267,12 @@ module.exports.Go = async () => {
 
           var radd = await this.addEnv(env_name, newCookie, "");
 
-        } else if (evnStatus == 1) {
+        } else /* if (evnStatus == 1) */ {
           //更新和启用环境变量    
           let eid = await this.getEvnIdByName(env_name);
 
           // 检查环境变量是否存在
           var ptKeyEnv = await this.getEnvsValueByName(env_name);
-
           if (ptKeyEnv) {
             var envVariables = getCookie(ptKeyEnv);
             console.log("新旧key");
