@@ -276,6 +276,9 @@ module.exports.Go = async () => {
 
           if (ptKeyEnv) {
             var envVariables = getCookie(ptKeyEnv);
+            console.log("新旧key");
+            console.log(newCookie);
+            console.log(envVariables.pt_key);
             if(newCookie == envVariables.pt_key)
             {
               console.log("可能cookie【"+env_name+"】已经失效，请及时更新cookie到【"+cookie_url+"】");
