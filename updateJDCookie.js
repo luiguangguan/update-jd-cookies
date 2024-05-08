@@ -239,7 +239,7 @@ module.exports.Go = async () => {
   }
   var evnStatus = await this.getstatusByName(env_name);
 
-  if (evnStatus != 0) {
+  if (/*evnStatus != 0*/ true) {
     console.log("开始更新");
     axios.get(cookie_url)
       .then(async response => {
