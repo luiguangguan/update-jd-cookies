@@ -1,5 +1,5 @@
 /*
-cron "0 */2 * * * *" jd_CheckCK.js, tag:京东CK检测by-ccwav
+cron "0 */2 * * * *" updateJDCookie.js, tag:更新京东Cookie
  */
 const got = require('got');
 require('dotenv').config();
