@@ -1,6 +1,7 @@
 /*
 cron "0 */2 * * * *" updateJDCookie.js, tag:更新京东Cookie
  */
+const $ = new Env('更新京东Cookie');
 const got = require('got');
 require('dotenv').config();
 const { readFile } = require('fs/promises');
