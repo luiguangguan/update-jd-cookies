@@ -1,9 +1,8 @@
-// cron "0 */3 * * *" script-path=updateJDCookie.js, tag=更新京东Cookie, enabled=true
+// cron "0 */2 * * *" script-path=updateJDCookie.js, tag=更新京东Cookie, enabled=true
 // script-name=更新京东Cookie
 /*
 update：2024/05/08
 */
-const $ = new Env('更新京东Cookie');
 const got = require('got');
 require('dotenv').config();
 const { readFile } = require('fs/promises');
