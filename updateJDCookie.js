@@ -309,6 +309,7 @@ module.exports.Go = async () => {
       })
       .catch(error => {
         console.error('获取 cookie 失败:', error.message);
+        console.error('請求地址:', cookie_url);
         JSON.stringify(error);
       });
   }else{
